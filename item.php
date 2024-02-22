@@ -36,9 +36,9 @@
         <td>$row[quantity]</td>
         <td>$row[unit_price]</td>
         <td>
-                  <a class='btn btn-success' href='edit.php?id=$row[id]'>Edit</a>
-                  <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
-                </td>
+            <a class='btn btn-success' href='edit.php?id=$row[id]'>Edit</a>
+            <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
+        </td>
       </tr>
       ";
             }

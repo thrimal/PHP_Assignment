@@ -98,7 +98,7 @@ if (isset($_POST['submit'])) {
                         </select>
                     </div>
                     <div class="col-12 pb-2" style="display: flex; justify-content: center;">
-                        <button  class="btn btn-primary" name="submit" type="submit">Submit Form</button>
+                        <button class="btn btn-primary" name="submit" type="submit">Submit Form</button>
                     </div>
                 </div>
             </div>
