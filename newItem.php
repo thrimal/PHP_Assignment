@@ -14,8 +14,6 @@ if (!$result_category) {
     die("Invalid query: " . $conn->error);
 } else {
     while ($row = $result_category->fetch_assoc()) {
-        // Assuming 'district' is one of the columns in the 'customer' table
-        // Add each district to the $districts array
         $categories[] = array(
             'id' => $row['id'],
             'category' => $row['category']
@@ -29,8 +27,6 @@ if (!$result_subcategory) {
     die("Invalid query: " . $conn->error);
 } else {
     while ($row = $result_subcategory->fetch_assoc()) {
-        // Assuming 'district' is one of the columns in the 'customer' table
-        // Add each district to the $districts array
         $subcategories[] = array(
             'id' => $row['id'],
             'subcategory' => $row['sub_category']
@@ -68,7 +64,9 @@ if (isset($_POST['submit'])) {
     if ($query->errno) {
         echo "Error: " . $query->error;
     } else {
-        echo "Record inserted successfully!";
+        echo "<script>alert('Record inserted successfully!');</script>";
+        echo "<script>window.location = '" . $_SERVER['PHP_SELF'] . "'</script>";
+        exit;
     }
 }
 ?>

@@ -11,8 +11,6 @@ if (!$result) {
     die("Invalid query: " . $conn->error);
 } else {
     while ($row = $result->fetch_assoc()) {
-        // Assuming 'district' is one of the columns in the 'customer' table
-        // Add each district to the $districts array
         $districts[] = array(
             'id' => $row['id'],
             'district' => $row['district']
@@ -50,7 +48,9 @@ if (isset($_POST['submit'])) {
     if ($query->errno) {
         echo "Error: " . $query->error;
     } else {
-        echo "Record inserted successfully!";
+        echo "<script>alert('Record inserted successfully!');</script>";
+        echo "<script>window.location = '" . $_SERVER['PHP_SELF'] . "'</script>";
+        exit;
     }
 }
 ?>
