@@ -8,8 +8,8 @@ include 'index.php';
 
 <div class="container-fluid">
     <div class="row mt-2 m-0 p-0">
-        <div class="col-4">
-            <div class="card" style="background: lightgray;width: 100%; height: 150px; position: relative;">
+        <div class="col-12" style="display: flex; justify-content: center;">
+            <div class="card" style="background: lightgray;max-width: 400px; height: 150px; position: relative;">
                 <form class="mt-2" method="post" action="" style="position: relative;display: flex; flex-direction: column; justify-content: center; justify-items: center; align-content: center; align-items: center;">
                     <label for="validationDefault01" class="form-label"></label>
                     <input class="form-control" style="position: relative;" type="text" name="daterange" id="validationDefault01" value="<?php echo isset($_POST['daterange']) ? $_POST['daterange'] : ''; ?>" required />
@@ -17,7 +17,7 @@ include 'index.php';
                 </form>
             </div>
         </div>
-        <div class="col-8">
+        <div class="col-12 mt-2">
             <?php
             if (isset($_POST['submit'])) {
                 include "connection.php";
@@ -56,7 +56,7 @@ include 'index.php';
                     echo "Error: " . $query->error;
                 } else {
                     echo "<table class='table table-hover'>
-                            <thead>
+                            <thead class='table-dark'>
                                 <tr>
                                     <th>Invoice No</th>
                                     <th>Date</th>
