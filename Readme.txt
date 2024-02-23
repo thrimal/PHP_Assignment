@@ -28,7 +28,7 @@ This project is a PHP web application developed using XAMPP server and PHPMyAdmi
 
 5. **Run Project**
    - Before you run or start writing any program in PHP, you should start Apache and MYSQL using XAMPP control panel. 
-   - Then copy that project folder to C:/XAMPP/htdocs.
+   - Then copy this project folder to C:/XAMPP/htdocs.
    - Open the browser and type http://localhost/assignment.
    - Thats all.
 
