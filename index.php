@@ -34,7 +34,10 @@ if (basename($_SERVER['PHP_SELF']) === 'index.php') {
                         <a class="nav-link" aria-current="page" href="item.php">Item</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="reports.php">Reports</a>
+                        <a class="nav-link" aria-current="page" href="invoiceReports.php">Invoice_Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="invoiceItemReports.php">Invoice_Item_Reports</a>
                     </li>
                 </ul>
             </div>

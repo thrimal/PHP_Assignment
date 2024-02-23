@@ -13,7 +13,7 @@
                 <th>Last Name</th>
                 <th>Contact Number</th>
                 <th>District</th>
-                <th>Actions</th>
+                <!-- <th>Actions</th> -->
             </tr>
         </thead>
         <tbody>
@@ -33,14 +33,15 @@
         <td>$row[last_name]</td>
         <td>$row[contact_no]</td>
         <td>$row[district]</td>
-        <td>
-            <a class='btn btn-success' href='edit.php?id=$row[id]'>Edit</a>
-            <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
-        </td>
+        
       </tr>
       ";
             }
             ?>
+            <!-- <td>
+            <a class='btn btn-success' href='edit.php?id=$row[id]'>Edit</a>
+            <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
+        </td> -->
         </tbody>
     </table>
 </div>

@@ -14,7 +14,7 @@
                 <th>Item Name</th>
                 <th>Quantity</th>
                 <th>Unit Price</th>
-                <th>Actions</th>
+                <!-- <th>Actions</th> -->
             </tr>
         </thead>
         <tbody>
@@ -35,14 +35,15 @@
         <td>$row[item_name]</td>
         <td>$row[quantity]</td>
         <td>$row[unit_price]</td>
-        <td>
-            <a class='btn btn-success' href='edit.php?id=$row[id]'>Edit</a>
-            <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
-        </td>
+        
       </tr>
       ";
             }
             ?>
+            <!-- <td>
+            <a class='btn btn-success' href='edit.php?id=$row[id]'>Edit</a>
+            <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
+        </td> -->
         </tbody>
     </table>
 </div>
