@@ -11,7 +11,7 @@ include 'index.php';
         <div class="col-12" style="display: flex; justify-content: center;">
             <div class="card" style="background: lightgray;max-width: 400px; height: 150px; position: relative;">
                 <form class="mt-2" method="post" action="" style="position: relative;display: flex; flex-direction: column; justify-content: center; justify-items: center; align-content: center; align-items: center;">
-                    <label for="validationDefault01" class="form-label"></label>
+                    <label for="validationDefault01" class="form-label">Please Select date here</label>
                     <input class="form-control" style="position: relative;" type="text" name="daterange" id="validationDefault01" value="<?php echo isset($_POST['daterange']) ? $_POST['daterange'] : ''; ?>" required />
                     <button style="position: relative; width: 200px; margin-top: 10px;" type="submit" class="btn btn-primary" name="submit">Invoice Report</button>
                 </form>
